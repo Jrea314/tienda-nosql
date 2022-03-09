@@ -13,7 +13,7 @@ function obtenerFacturas( filtroFactura ) {
         }
         model.find( filtro )
             .populate('ref_cliente')
-            .populate('ref_empleado')
+            .populate('ref_empleado', '-usuario -clave')
             .populate('ref_factura_detalle.ref_producto')
             .exec((error, data) => {
                 if (error) {
