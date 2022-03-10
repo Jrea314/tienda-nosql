@@ -4,7 +4,8 @@
   "description": "tienda con bd y heroku",
   "main": "servidor.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node servidor.js"
   },
   "author": "josue rea",
   "license": "GPL-3.0",
