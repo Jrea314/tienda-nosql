@@ -5,6 +5,7 @@
   "main": "servidor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon servidor.js",
     "start": "node servidor.js"
   },
   "author": "josue rea",
@@ -12,6 +13,7 @@
   "dependencies": {
     "body-parser": "^1.19.2",
     "express": "^4.17.3",
-    "mongoose": "^6.2.5"
+    "mongoose": "^6.2.5",
+    "nodemon": "^2.0.15"
   }
 }
