@@ -14,7 +14,7 @@ app.use( bodyParser.urlencoded({extended:false}) )
 
 rutas( app )
 
-app.use(express.static('public'))
+app.use('/', express.static('public'))
 
 app.listen( config.PUERTO )
 console.log( `La aplicación está escuchando en http://localhost:${config.PUERTO}`)
